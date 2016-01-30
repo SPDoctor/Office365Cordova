@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!-- Enable all requests, inline styles, and eval() -->
+	<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+	<title>Office365 Web Sample</title>
+	<link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>Office365 Web Sample</h1>
+	<button onclick="onLoad('id', 'API')">Load ID</button>
+	<button onclick="onLoad('messages', 'API')">Load Messages with API</button>
+	<button onclick="onLoad('contacts', 'API')">Load Contacts with API</button>
+	<button onclick="onLoad('messages', 'REST')">Load Messages with REST</button>
+	<button onclick="onLoad('contacts', 'REST')">Load Contacts with REST</button>
+	<button onclick="onLoad('contacts2', 'REST')">Load Contacts with REST (no jQuery)</button>
+	<button onclick="onClear()">Clear</button>
+	<button onclick="onLogout()">Logout</button>
+	<br />Microsoft(Live) Account<input id="msaccount" type="checkbox" />
+	<br />
+	<p id="name"></p>
+	<h2>Messages:</h2>
+	<ul id="messages"></ul>
+	<h2>Contacts:</h2>
+	<ul id="contacts"></ul>
+	<h3 id="error"></h3>
+
+	<!-- Cordova reference, this is added to your app when it's built. -->
+	<script src="cordova.js"></script>
+	<script src="scripts/platformOverrides.js"></script>
+	<script src="scripts/jquery-1.11.3.js"></script>
+	<script src="services/office365/scripts/o365loader.js"></script>
+	<script src="scripts/adal.js"></script>
+	<script src="scripts/adal-o365auth.js"></script>
+	<script src="scripts/indexTemp.js"></script>
+</body>
+</html>
