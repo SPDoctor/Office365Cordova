@@ -67,9 +67,11 @@
     <PropertyGroup>
     </PropertyGroup>
     <PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup>
         <PreBuildEvent>
       cd /d $(MSBuildThisFileDirectory)
-      node -e "require('C:\\Users\\BillAyers\\AppData\\Roaming\\npm\\node_modules\\vs-tac\\lib\\hooks.js').updateAppxManifest('C:\\Users\\BillAyers\\Documents\\Projects\\Office365CordovaSample\\Office365Cordova\\platforms\\windows','C:\\Users\\BillAyers\\Documents\\Projects\\Office365CordovaSample\\Office365Cordova\\platforms\\windows\\..\\..\\')"
+      node -e "require('C:\\Users\\BillAyers\\AppData\\Roaming\\npm\\node_modules\\vs-tac\\lib\\hooks.js').updateAppxManifest('C:\\Users\\BillAyers\\Documents\\Projects\\Office365Cordova\\Office365Cordova\\platforms\\windows','C:\\Users\\BillAyers\\Documents\\Projects\\Office365Cordova\\Office365Cordova\\platforms\\windows\\..\\..\\')"
     </PreBuildEvent>
     </PropertyGroup>
 </Project>

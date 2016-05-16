@@ -79,7 +79,7 @@ function onLoad(content, type) {
 					}
 				}).then(function (response) {
 					var contacts = "";
-					if (response.value.length == 0) contacts = "You have no contacts"
+					if (response.value.length == 0) contacts = "You have no contacts";
 					for (var i = 0; i < response.value.length; i++) {
 						contacts += "<li>" + response.value[i].DisplayName + "</li>";
 					};
